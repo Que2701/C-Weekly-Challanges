@@ -11,14 +11,14 @@ namespace ForEachApp
     {
         static void Main(string[] args)
         {
-            PeopleList peopleList = PeopleList.Instance;
+            PersonList peopleList = PersonList.Instance;
             foreach (var item in peopleList.PeoplesList)
             {
                 Console.WriteLine($"Hello {item}");
             }
             Console.WriteLine("* * * Bonus ForEach Challange * * *");
             // Bonus foreach challange
-            People people = People.Instance;
+            PersonModel people = PersonModel.Instance;
             people.PopulatePeopleList();
             foreach (var person in people.Peoples)
             {
