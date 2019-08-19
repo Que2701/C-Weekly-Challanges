@@ -12,11 +12,12 @@ namespace ForEachApp
         static void Main(string[] args)
         {
             PersonList peopleList = PersonList.Instance;
+            Console.WriteLine("* * * ForEach Challange * * *");
             foreach (var item in peopleList.PeoplesList)
             {
                 Console.WriteLine($"Hello {item}");
             }
-            Console.WriteLine("* * * Bonus ForEach Challange * * *");
+            Console.WriteLine("\n* * * Bonus ForEach Challange * * *");
             // Bonus foreach challange
             PersonModel people = PersonModel.Instance;
             people.PopulatePeopleList();
