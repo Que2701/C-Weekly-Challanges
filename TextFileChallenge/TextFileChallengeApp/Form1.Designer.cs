@@ -51,6 +51,7 @@
             this.saveListButton.TabIndex = 23;
             this.saveListButton.Text = "Save List";
             this.saveListButton.UseVisualStyleBackColor = true;
+            this.saveListButton.Click += new System.EventHandler(this.saveListButton_Click);
             // 
             // addUserButton
             // 
@@ -60,6 +61,7 @@
             this.addUserButton.TabIndex = 22;
             this.addUserButton.Text = "Add User";
             this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // isAliveCheckbox
             // 
@@ -165,6 +167,7 @@
             this.Controls.Add(this.headerLabel);
             this.Name = "TextFileChallenge";
             this.Text = "Text File Challenge by Tim Corey";
+            this.Load += new System.EventHandler(this.TextFileChallenge_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ageNumbericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
