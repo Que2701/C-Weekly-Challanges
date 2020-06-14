@@ -58,7 +58,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemUserModel.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +88,10 @@
     <ProjectReference Include="..\ConnectionLibrary\ConnectionLibrary.csproj">
       <Project>{92f1c2a7-5986-403b-beab-7237c35809db}</Project>
       <Name>ConnectionLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLibrary\DataAccessLibrary.csproj">
+      <Project>{0991de4b-a68a-4a57-9a1d-0e4b465d89a2}</Project>
+      <Name>DataAccessLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

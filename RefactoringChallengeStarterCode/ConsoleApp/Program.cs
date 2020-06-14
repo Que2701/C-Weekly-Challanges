@@ -50,7 +50,7 @@ namespace ConsoleApp
                             LastName = lastName
                         };
 
-                        ConnectionFactory.GetConnection(connectionString).Execute("dbo.spSystemUser_Create", p, commandType: CommandType.StoredProcedure);
+                        ConnectionFactory.GetConnection().Execute("dbo.spSystemUser_Create", p, commandType: CommandType.StoredProcedure);
 
                         Console.WriteLine();
                         break;
